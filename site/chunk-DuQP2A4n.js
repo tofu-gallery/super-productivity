@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";var f;var p=I(()=>{"use strict";(function(t){t.FOLDER=`f`,t.PROJECT=`p`,t.TAG=`t`})(f||(f={}))});export{p as n,f as t};

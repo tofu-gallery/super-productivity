@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";import{Ar as iI,B as Ff,Di as sI,Ir as ja,Qr as mc,ai as nm,bi as qf,i as $a,va as zf}from"./chunk-DpSPTUNa.js";var c;var g;var m=I(()=>{"use strict";mc();nm();c=()=>navigator.onLine!==!1,g=iI(ja(window,`offline`).pipe($a(!1)),ja(window,`online`).pipe($a(!0))).pipe(sI(1e3),zf(navigator.onLine),Ff(),qf(1))});export{g as n,m as r,c as t};

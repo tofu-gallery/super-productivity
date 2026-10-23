@@ -1,0 +1,2 @@
+import{o as I}from"./chunk-CKYLy748.js";import{a as c,s as p}from"./chunk-CEMX8dCq.js";import{i as Te,r as Se}from"./chunk-DT5itDgv.js";var h;var g;var f=I(()=>{"use strict";p();Se();h=e=>Te(e),g=e=>{try{let t=e.split(`
+`).filter(s=>s.trim()!==``);if(t.length===0)return!1;let i=t.filter(h);return i.length===t.length||i.length>=2}catch(t){return c.err(`Checklist parsing failed`),c.err(t),!1}}});export{g as n,f as t};

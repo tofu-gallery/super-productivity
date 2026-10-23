@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";import{n as N,r as R}from"./chunk-DQVzRG1W.js";var o=I(()=>{"use strict";});var m;var h=I(()=>{"use strict";N();o();m=R(`Share`,{web:()=>import(`./chunk-BTo-UusC.js`).then(t=>new t.ShareWeb)})});export{m as n,h as t};

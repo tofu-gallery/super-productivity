@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";import{O as DM,Pt as O}from"./chunk-DpSPTUNa.js";var e;var a;var n=I(()=>{"use strict";DM();e=navigator.platform.toUpperCase().indexOf(`MAC`)>=0,a=new O(`IS_MAC`,{providedIn:`root`,factory:()=>e})});export{e as n,n as r,a as t};

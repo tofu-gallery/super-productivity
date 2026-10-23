@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";import{a as M,l as b,n as D$1,r as G,t as C}from"./chunk-Baj3xxZu.js";import{c as N,i as D$2,l as P,n as B,s as M$1}from"./chunk-DuHfLn40.js";var f;var D;var h=I(()=>{"use strict";M$1();D$1();P();f=new Map([C,M,b,D$2].map(T=>[T.id,T.theme])),D=(T,p)=>f.get(p)??(T===N.TAG?G.theme:B.theme)});export{h as n,D as t};

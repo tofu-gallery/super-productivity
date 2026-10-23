@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";var o;var i=I(()=>{"use strict";o=/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)});export{o as n,i as t};

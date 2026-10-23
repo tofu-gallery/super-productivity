@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";import{O as DM,On as XN}from"./chunk-DpSPTUNa.js";import{_ as v,t as A}from"./chunk-k8vEM5l9.js";import{o,r as a$1}from"./chunk-DsUYCWyK.js";import{n as _,r as s}from"./chunk-CFIjxg2k.js";var p;var D;var a=I(()=>{"use strict";DM();a$1();_();A();p=XN(()=>o===`mouseOnly`?!1:s()===`touch`),D=XN(()=>p()?v:0)});export{a as n,p as r,D as t};

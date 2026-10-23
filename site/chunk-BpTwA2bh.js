@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";import{n as N,r as R}from"./chunk-DQVzRG1W.js";var o=I(()=>{"use strict";});var i;I(()=>{N();o();i=R(`Browser`,{web:()=>import(`./chunk-DXuPpkel.js`).then(t=>new t.BrowserWeb)})})();export{i as Browser};

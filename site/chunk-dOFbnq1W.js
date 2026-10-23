@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";var n;var i=I(()=>{"use strict";n=[`iPad Simulator`,`iPhone Simulator`,`iPod Simulator`,`iPad`,`iPhone`,`iPod`].includes(navigator.platform)||navigator.userAgent.includes(`Mac`)&&`ontouchend`in document});export{n,i as t};

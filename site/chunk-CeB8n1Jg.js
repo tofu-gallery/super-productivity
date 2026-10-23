@@ -1,0 +1,2 @@
+import{o as I}from"./chunk-CKYLy748.js";var u;var s=I(()=>{"use strict";u=n=>{let l=t=>{if(n.length===0)return!0;let e=n[n.length-1].path;return t.length>e.length||e.substring(0,t.length)!==t};return(t,e)=>(t&&l(e.path)&&(e.value===void 0&&(e.description??=["The value at this path is `undefined`.",``,`Please fill the \`${e.expected}\` typed value next time.`].join(`
+`)),n.push(e)),!1)}});export{u as n,s as t};

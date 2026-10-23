@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";var d;var o;var a=I(()=>{"use strict";d={language:`en`,isDayFirst:!1},o=n=>{let e=n.indexOf(`dd`),t=n.indexOf(`MM`);return e!==-1&&t!==-1&&e<t}});export{d as n,o as r,a as t};

@@ -1,0 +1,280 @@
+import{d as N,n as E,o as I,r as F}from"./chunk-CKYLy748.js";import{$t as SC,Ar as iI,At as N_,B as Ff,Bi as ut,F as Ev,G as G_,Ht as P_,Ji as wN,Jr as ls,Jt as Rb,K as Gc,Ki as vv,N as Ee,Ni as u2,Nr as is,O as DM,On as XN,Pt as O,Qn as be,Qr as mc,R as FT,Rn as Z_,Rt as Ov,S as Cd,Sn as Ve,Ti as re,Tn as WN,Tt as Md,U as Fs,V as Fi,Wt as Q_,Zn as bd,Zt as Rv,_ as Bv,ai as nm,an as Sh,b as CN,bi as qf,bn as VT,ca as xo,ci as oe,d as Aa,di as pI,ea as xC,fr as f2,ft as Js,gi as qD,ha as yv,hn as U_,i as $a,ia as x_,lt as Jb,mt as K_,ni as nE,pa as yE,pr as fI,pt as Jv,r as $N,sa as xh,sn as Sv,st as J,ta as xD,u as A_,ua as xv,un as Td,v as CC,wi as rE,x as C_,xt as M,ya as zy,yi as q_,yt as LN}from"./chunk-DpSPTUNa.js";import{i as W,t as I$1}from"./chunk-BCd2RZKS.js";import{m as i,t as A}from"./chunk-k8vEM5l9.js";import{a as c,s as p,t as A$1}from"./chunk-CEMX8dCq.js";import{S as w$1,l as Yt}from"./chunk-dyHZtZ-p.js";import{n as _,t as T}from"./chunk-CqP3wTqx.js";import{Vt as Wr,Y as Kr,d as Br,k as Gr}from"./chunk-Pk4-2glZ.js";import{a as si,t as M$1}from"./chunk-BBX9dPW-.js";import{n as Dn,x as qi}from"./chunk-CbtgRyD-.js";import{$ as kr,E as Ur,L as bi,O as Vr,Ot as yi,T as Ue,_ as Jt,b as Kr$1,c as Fr,d as Gt,g as Ji,gt as rs,k as Wi,lt as pd,pt as qt}from"./chunk-CCkpV3Yz.js";import{n as It$1,s as dt,t as Dt,u as pt}from"./chunk-CAoNfbGC.js";import{S as Pr,_ as Ki,g as Jr,st as zs}from"./chunk-DPNJ07R1.js";import{n as u,t as i$1}from"./chunk-R8xXEsD6.js";import{f as rt,o as ct,s as dt$1}from"./chunk-xxBR6rcr.js";import{i as V}from"./chunk-BvQzmATq.js";import{c as Wt,f as ft,l as Xt,n as Ja}from"./chunk-wsteUQXI.js";import{E as on$1,a as F$1,d as Pn,f as Qt,g as We,l as Ln,m as Un,p as Tn,w as lt,x as hn}from"./chunk-DfsTRc9U.js";import{d as oi,f as pe,h as w$2,m as si$1,o as be$1,p as ri,s as et}from"./chunk-CHc6jpnL.js";import{f as Ue$1,g as ni}from"./chunk-BPkCaz8J.js";import{c as kt,r as He,s as he}from"./chunk-Coq8gCks.js";import{n as L,r as M$2}from"./chunk-CdkYbXZK.js";import{i as k,r as ht,t as D}from"./chunk-CDKmLs_F.js";import{n as g,r as l}from"./chunk-Dn-3cR-v.js";import{n as e,t as N$1}from"./chunk-wnCpzXTb.js";import{o as u$1,t as D$1}from"./chunk-DV_2QcdJ.js";import{r as nn$1,t as St}from"./chunk-CyQ2E-y8.js";function Yn(r){return typeof r==`function`}function aa(r){return[xt,r?.loader??[],r?.clipboardOptions??[],r?.katexOptions??[],r?.markedOptions??[],r?.mermaidOptions??[],r?.markedExtensions??[],r?.sanitize??[]]}var zn;var jn;var Hn;var Vn;var $n;var Wn;var Kn;var qn;var Xn;var Qn;var Zn;var Jn;var ta;var ea;var na;var xt;var _t;var Ua;var za;var ja;var oa=I(()=>{"use strict";DM();DM();I$1();mc();nm();Dn();yi();Fr();ht();ht();zn=`Copy`,jn=`Copied`,Hn=(()=>{class r{constructor(){this._buttonClick$=new re,this.copied=W(this._buttonClick$.pipe(fI(()=>iI(Aa(!0),Ve(3e3).pipe($a(!1)))),Ff(),qf(1))),this.copiedText=XN(()=>this.copied()?jn:zn)}onCopyToClipboardClick(){this._buttonClick$.next()}static{this.ɵfac=function(e){return new(e||r)}}static{this.ɵcmp=CC({type:r,selectors:[[`markdown-clipboard`]],decls:2,vars:3,consts:[[1,`markdown-clipboard-button`,3,`click`]],template:function(e,n){e&1&&(Td(0,`button`,0),xv(`click`,function(){return n.onCopyToClipboardClick()}),wN(1),Cd()),e&2&&(Bv(`copied`,n.copied()),Jb(),Jv(n.copiedText()))},encapsulation:2})}}return r})(),Vn=new O(`CLIPBOARD_OPTIONS`),$n=new O(`KATEX_OPTIONS`),Wn=new O(`MARKED_EXTENSIONS`),Kn=new O(`MARKED_OPTIONS`),qn=new O(`MERMAID_OPTIONS`),Xn=new O(`SANITIZE`);Qn="[ngx-markdown] When using the `emoji` attribute you *have to* include Emoji-Toolkit files to `angular.json` or use imports. See README for more information",Zn="[ngx-markdown] When using the `katex` attribute you *have to* include the `marked-katex-extension` package and its dependencies. See README for more information",Jn="[ngx-markdown] When using the `mermaid` attribute you *have to* include Mermaid files to `angular.json` or use imports. See README for more information",ta="[ngx-markdown] When using the `clipboard` attribute you *have to* include Clipboard files to `angular.json` or use imports. See README for more information",ea="[ngx-markdown] When using the `clipboard` attribute you *have to* provide the `viewContainerRef` parameter to `MarkdownService.render()` function",na="[ngx-markdown] When using the `src` attribute you *have to* pass the `HttpClient` as a parameter of the `forRoot` method. See README for more information",xt=(()=>{class r{get options(){return this._options}set options(t){this._options=E(E({},this.DEFAULT_MARKED_OPTIONS),t)}get renderer(){return this.options.renderer}set renderer(t){this.options.renderer=t}constructor(){this.clipboardOptions=M(Vn,{optional:!0}),this.extensions=M(Wn,{optional:!0}),this.http=M(kr,{optional:!0}),this.mermaidOptions=M(qn,{optional:!0}),this.katexOptions=M($n,{optional:!0}),this.platform=M(xD),this.sanitize=M(Xn,{optional:!0}),this.sanitizer=M(Gt),this.katexGate={enabled:!1},this.markedKatex=null,this.DEFAULT_MARKED_OPTIONS={renderer:new D},this.DEFAULT_MERMAID_OPTIONS={startOnLoad:!1},this.DEFAULT_CLIPBOARD_OPTIONS={buttonComponent:void 0},this.DEFAULT_PARSE_OPTIONS={decodeHtml:!1,inline:!1,emoji:!1,katex:!1,katexOptions:void 0,mermaid:!1,markedOptions:void 0,disableSanitizer:!1},this.DEFAULT_RENDER_OPTIONS={clipboard:!1,clipboardOptions:void 0,mermaid:!1,mermaidOptions:void 0},this.DEFAULT_SECURITY_CONTEXT=J.HTML,this._options=null,this._reload$=new re,this.reload$=this._reload$.asObservable(),this.options=M(Kn,{optional:!0})}parse(n){return N(this,arguments,function*(t,e=this.DEFAULT_PARSE_OPTIONS){let{decodeHtml:a,inline:i,emoji:o,katex:s,katexOptions:d,mermaid:p,disableSanitizer:u}=e;this.katexGate={enabled:!!e.katex};let m=E(E({},this.options),e.markedOptions),_=m.renderer||this.renderer||new D;this.extensions&&(this.renderer=this.extendsRendererForExtensions(_)),s&&(this.renderer=yield this.extendsRendererForKatex(_,d)),p&&(this.renderer=this.extendsRendererForMermaid(_));let y=this.trimIndentation(t),L=a?this.decodeHtml(y):y,cn=o?this.parseEmoji(L):L,St=this.parseMarked(cn,m,i);return u?St:this.sanitizeHtml(St)})}render(t,e=this.DEFAULT_RENDER_OPTIONS,n){let{clipboard:a,clipboardOptions:i,mermaid:o,mermaidOptions:s}=e;o&&this.renderMermaid(t,E(E(E({},this.DEFAULT_MERMAID_OPTIONS),this.mermaidOptions),s)),a&&this.renderClipboard(t,n,E(E(E({},this.DEFAULT_CLIPBOARD_OPTIONS),this.clipboardOptions),i)),this.highlight(t)}reload(){this._reload$.next()}getSource(t){if(!this.http)throw new Error(na);return this.http.get(t,{responseType:`text`}).pipe(Ee(e=>this.handleExtension(t,e)))}highlight(t){if(!qi(this.platform)||typeof Prism>`u`||typeof Prism.highlightAllUnder>`u`)return;t||(t=document);let e=t.querySelectorAll(`pre code:not([class*="language-"])`);Array.prototype.forEach.call(e,n=>n.classList.add(`language-none`)),Prism.highlightAllUnder(t)}decodeHtml(t){if(!qi(this.platform))return t;let e=document.createElement(`textarea`);return e.innerHTML=t,e.value}extendsRendererForExtensions(t){let e=t;return e.ɵNgxMarkdownRendererExtendedForExtensions===!0||(this.extensions&&this.extensions.length>0&&k.use(...this.extensions),e.ɵNgxMarkdownRendererExtendedForExtensions=!0),t}extendsRendererForKatex(t,e){return N(this,null,function*(){let n=this.katexGate,a=t;if(a.ɵNgxMarkdownRendererExtendedForKatex===!0)return t;if(this.markedKatex??=yield import(`marked-katex-extension`).then(p=>p.default).catch(()=>null),!this.markedKatex)throw new Error(Zn);let i=E(E({},this.katexOptions),e),o=this.markedKatex(i),s=o.extensions?.map(p=>{let m=p.tokenizer;return F(E({},p),{tokenizer(_){if(!(!n.enabled||!m))return m.call(this,_,[])}})}),d=F(E({},o),{extensions:s});return k.use(d),a.ɵNgxMarkdownRendererExtendedForKatex=!0,t})}extendsRendererForMermaid(t){let e=t;if(e.ɵNgxMarkdownRendererExtendedForMermaid===!0)return t;let n=t.code;return t.code=a=>a.lang===`mermaid`?`<div class="mermaid">${a.text}</div>`:n(a),e.ɵNgxMarkdownRendererExtendedForMermaid=!0,t}handleExtension(t,e){let n=t.lastIndexOf(`://`),a=n>-1?t.substring(n+4):t,i=a.lastIndexOf(`/`),o=i>-1?a.substring(i+1).split(`?`)[0]:``,s=o.lastIndexOf(`.`),d=s>-1?o.substring(s+1):``;return d&&d!==`md`?"```"+d+`
+`+e+"\n```":e}parseMarked(t,e,n=!1){if(e.renderer){let a=E({},e.renderer);delete a.ɵNgxMarkdownRendererExtendedForExtensions,delete a.ɵNgxMarkdownRendererExtendedForKatex,delete a.ɵNgxMarkdownRendererExtendedForMermaid,delete e.renderer,k.use({renderer:a})}return n?k.parseInline(t,e):k.parse(t,e)}parseEmoji(t){if(!qi(this.platform))return t;if(typeof joypixels>`u`||typeof joypixels.shortnameToUnicode>`u`)throw new Error(Qn);return joypixels.shortnameToUnicode(t)}renderClipboard(t,e,n){if(!qi(this.platform))return;if(typeof ClipboardJS>`u`)throw new Error(ta);if(!e)throw new Error(ea);let{buttonComponent:a,buttonTemplate:i}=n,o=t.querySelectorAll(`pre`);for(let s=0;s<o.length;s++){let d=o.item(s),p=document.createElement(`div`);p.style.position=`relative`,d.parentNode.insertBefore(p,d),p.appendChild(d);let u=document.createElement(`div`);u.classList.add(`markdown-clipboard-toolbar`),u.style.position=`absolute`,u.style.top=`.5em`,u.style.right=`.5em`,u.style.zIndex=`1`,p.insertAdjacentElement(`beforeend`,u),p.onmouseenter=()=>u.classList.add(`hover`),p.onmouseleave=()=>u.classList.remove(`hover`);let m;if(a){let y=e.createComponent(a);m=y.hostView,y.changeDetectorRef.markForCheck()}else if(i)m=e.createEmbeddedView(i);else{let y=e.createComponent(Hn);m=y.hostView,y.changeDetectorRef.markForCheck()}let _;m.rootNodes.forEach(y=>{u.appendChild(y),_=new ClipboardJS(y,{text:()=>d.innerText})}),m.onDestroy(()=>_.destroy())}}renderMermaid(t,e=this.DEFAULT_MERMAID_OPTIONS){if(!qi(this.platform))return;if(typeof mermaid>`u`||typeof mermaid.initialize>`u`)throw new Error(Jn);let n=t.querySelectorAll(`.mermaid`);n.length!==0&&(mermaid.initialize(e),mermaid.run({nodes:n}))}trimIndentation(t){if(!t)return``;let e;return t.split(`
+`).map(n=>{let a=e;return n.length>0&&(a=isNaN(a)?n.search(/\S|$/):Math.min(n.search(/\S|$/),a)),isNaN(e)&&(e=a),a?n.substring(a):n}).join(`
+`)}sanitizeHtml(t){return N(this,null,function*(){return Yn(this.sanitize)?this.sanitize(yield t):this.sanitize!==J.NONE?this.sanitizer.sanitize(this.sanitize??this.DEFAULT_SECURITY_CONTEXT,t)??``:t})}static{this.ɵfac=function(e){return new(e||r)}}static{this.ɵprov=oe({token:r,factory:r.ɵfac})}}return r})(),_t=(function(r){return r.CommandLine=`command-line`,r.LineHighlight=`line-highlight`,r.LineNumbers=`line-numbers`,r})(_t||{}),Ua=(()=>{class r{constructor(){this.element=M(xo),this.markdownService=M(xt),this.viewContainerRef=M(Js),this.pendingTasks=M(ls),this.error=new ut,this.load=new ut,this.ready=new ut,this._clipboard=!1,this._commandLine=!1,this._disableSanitizer=!1,this._emoji=!1,this._inline=!1,this._katex=!1,this._lineHighlight=!1,this._lineNumbers=!1,this._mermaid=!1,this.destroyed$=new re}get disableSanitizer(){return this._disableSanitizer}set disableSanitizer(t){this._disableSanitizer=this.coerceBooleanProperty(t)}get inline(){return this._inline}set inline(t){this._inline=this.coerceBooleanProperty(t)}get clipboard(){return this._clipboard}set clipboard(t){this._clipboard=this.coerceBooleanProperty(t)}get emoji(){return this._emoji}set emoji(t){this._emoji=this.coerceBooleanProperty(t)}get katex(){return this._katex}set katex(t){this._katex=this.coerceBooleanProperty(t)}get mermaid(){return this._mermaid}set mermaid(t){this._mermaid=this.coerceBooleanProperty(t)}get lineHighlight(){return this._lineHighlight}set lineHighlight(t){this._lineHighlight=this.coerceBooleanProperty(t)}get lineNumbers(){return this._lineNumbers}set lineNumbers(t){this._lineNumbers=this.coerceBooleanProperty(t)}get commandLine(){return this._commandLine}set commandLine(t){this._commandLine=this.coerceBooleanProperty(t)}ngOnChanges(){this.loadContent()}loadContent(){if(this.data!=null){this.handleData();return}if(this.src!=null){this.handleSrc();return}}ngAfterViewInit(){!this.data&&!this.src&&this.handleTransclusion(),this.markdownService.reload$.pipe(pI(this.destroyed$)).subscribe(()=>this.loadContent())}ngOnDestroy(){this.destroyed$.next(),this.destroyed$.complete()}render(t,e=!1){return N(this,null,function*(){let n=this.pendingTasks.add();try{yield this.renderContent(t,e)}finally{n()}})}renderContent(t,e){return N(this,null,function*(){let n={decodeHtml:e,inline:this.inline,emoji:this.emoji,katex:this.katex,katexOptions:this.katexOptions,mermaid:this.mermaid,disableSanitizer:this.disableSanitizer},a={clipboard:this.clipboard,clipboardOptions:this.getClipboardOptions(),mermaid:this.mermaid,mermaidOptions:this.mermaidOptions},i=yield this.markdownService.parse(t,n);this.element.nativeElement.innerHTML=i,this.handlePlugins(),this.markdownService.render(this.element.nativeElement,a,this.viewContainerRef),this.ready.emit()})}coerceBooleanProperty(t){return t!=null&&`${String(t)}`!=`false`}getClipboardOptions(){if(this.clipboardButtonComponent||this.clipboardButtonTemplate)return{buttonComponent:this.clipboardButtonComponent,buttonTemplate:this.clipboardButtonTemplate}}handleData(){this.render(this.data)}handleSrc(){this.markdownService.getSource(this.src).subscribe({next:t=>{this.render(t).then(()=>{this.load.emit(t)})},error:t=>this.error.emit(t)})}handleTransclusion(){this.render(this.element.nativeElement.innerHTML,!0)}handlePlugins(){this.commandLine&&(this.setPluginClass(this.element.nativeElement,_t.CommandLine),this.setPluginOptions(this.element.nativeElement,{dataFilterOutput:this.filterOutput,dataHost:this.host,dataPrompt:this.prompt,dataOutput:this.output,dataUser:this.user})),this.lineHighlight&&this.setPluginOptions(this.element.nativeElement,{dataLine:this.line,dataLineOffset:this.lineOffset}),this.lineNumbers&&(this.setPluginClass(this.element.nativeElement,_t.LineNumbers),this.setPluginOptions(this.element.nativeElement,{dataStart:this.start}))}setPluginClass(t,e){let n=t.querySelectorAll(`pre`);for(let a=0;a<n.length;a++){let i=e instanceof Array?e:[e];n.item(a).classList.add(...i)}}setPluginOptions(t,e){let n=t.querySelectorAll(`pre`);for(let a=0;a<n.length;a++)Object.keys(e).forEach(i=>{let o=e[i];if(o){let s=this.toLispCase(i);n.item(a).setAttribute(s,o.toString())}})}toLispCase(t){let e=t.match(/([A-Z])/g);if(!e)return t;let n=t.toString();for(let a=0,i=e.length;a<i;a++)n=n.replace(new RegExp(e[a]),`-`+e[a].toLowerCase());return n.slice(0,1)===`-`&&(n=n.slice(1)),n}static{this.ɵfac=function(e){return new(e||r)}}static{this.ɵcmp=(function(){return CC({type:r,selectors:[[`markdown`],[``,`markdown`,``]],inputs:{data:`data`,src:`src`,disableSanitizer:`disableSanitizer`,inline:`inline`,clipboard:`clipboard`,clipboardButtonComponent:`clipboardButtonComponent`,clipboardButtonTemplate:`clipboardButtonTemplate`,emoji:`emoji`,katex:`katex`,katexOptions:`katexOptions`,mermaid:`mermaid`,mermaidOptions:`mermaidOptions`,lineHighlight:`lineHighlight`,line:`line`,lineOffset:`lineOffset`,lineNumbers:`lineNumbers`,start:`start`,commandLine:`commandLine`,filterOutput:`filterOutput`,host:`host`,prompt:`prompt`,output:`output`,user:`user`},outputs:{error:`error`,load:`load`,ready:`ready`},features:[qD],ngContentSelectors:[`*`],decls:1,vars:0,template:function(n,a){n&1&&(q_(),G_(0))},encapsulation:2})})()}}return r})(),za=(()=>{class r{constructor(){this.domSanitizer=M(Gt),this.elementRef=M(xo),this.markdownService=M(xt),this.viewContainerRef=M(Js),this.injector=M(be)}transform(t,e){return N(this,null,function*(){if(t==null)return``;if(typeof t!=`string`)return console.error(`MarkdownPipe has been invoked with an invalid value type [${typeof t}]`),t;let n=yield this.markdownService.parse(t,e);return Rb(()=>this.markdownService.render(this.elementRef.nativeElement,e,this.viewContainerRef),{injector:this.injector}),this.domSanitizer.bypassSecurityTrustHtml(n)})}static{this.ɵfac=function(e){return new(e||r)}}static{this.ɵpipe=xC({name:`markdown`,type:r,pure:!0})}}return r})();ja=(()=>{class r{static forRoot(t){return{ngModule:r,providers:[aa(t)]}}static forChild(){return{ngModule:r}}static{this.ɵfac=function(e){return new(e||r)}}static{this.ɵmod=zy({type:r})}static{this.ɵinj=Gc({})}}return r})()});function ra(r,c){if(r&1&&(Fs(0,`mat-option`,5),wN(1),$N(2,`translate`),bd()),r&2){let t=c.$implicit;vv(`value`,t.type),Jb(),Md(``,WN(2,2,t.title),` `)}}var ia;var Ye;var Qe=I(()=>{"use strict";DM();be$1();A();_();hn();he();He();St();V();Xt();Pr();Ki();DM();hn();ia=/^[a-z][a-z0-9+.-]*:/i,Ye=(()=>{class r{constructor(){this._matDialogRef=M(w$2),this.data=M(pe),this.T=T,this.attachmentCopy=E({},this.data.attachment),this.attachmentCopy.type||(this.attachmentCopy.type=`LINK`),this.types=[{type:`LINK`,title:T.F.ATTACHMENT.DIALOG_EDIT.TYPES.LINK},{type:`IMG`,title:T.F.ATTACHMENT.DIALOG_EDIT.TYPES.IMG}],i&&this.types.push({type:`FILE`,title:T.F.ATTACHMENT.DIALOG_EDIT.TYPES.FILE})}close(t){this._matDialogRef.close(t)}submit(){!this.attachmentCopy.path||!this.attachmentCopy.type||(this.attachmentCopy.path=this.attachmentCopy.path.trim(),(this.attachmentCopy.type===`LINK`||this.attachmentCopy.type===`IMG`)&&this.attachmentCopy.path&&!ia.test(this.attachmentCopy.path)&&(this.attachmentCopy.path=this.attachmentCopy.path.startsWith(`//`)?`http:`+this.attachmentCopy.path:`http://`+this.attachmentCopy.path),this.attachmentCopy.path&&this.close(this.attachmentCopy))}mapTypeToLabel(t){switch(t){case`FILE`:return T.F.ATTACHMENT.DIALOG_EDIT.LABELS.FILE;case`IMG`:return T.F.ATTACHMENT.DIALOG_EDIT.LABELS.IMG;default:return T.F.ATTACHMENT.DIALOG_EDIT.LABELS.LINK}}mapTypeToPlaceholder(t){switch(t){case`FILE`:return T.F.ATTACHMENT.DIALOG_EDIT.PLACEHOLDERS.FILE;case`IMG`:return T.F.ATTACHMENT.DIALOG_EDIT.PLACEHOLDERS.IMG;default:return T.F.ATTACHMENT.DIALOG_EDIT.PLACEHOLDERS.LINK}}trackByIndex(t,e){return t}static{this.ɵfac=function(e){return new(e||r)}}static{this.ɵcmp=CC({type:r,selectors:[[`dialog-edit-task-attachment`]],decls:34,vars:25,consts:[[`form`,`ngForm`],[3,`submit`],[`mat-dialog-title`,``],[1,`form-wrapper`],[`name`,`type`,`required`,`true`,3,`ngModelChange`,`ngModel`],[3,`value`],[`autofocus`,`autofocus`,`matInput`,``,`name`,`path`,`required`,``,`type`,`text`,3,`ngModelChange`,`ngModel`,`placeholder`],[`matInput`,``,`name`,`title`,`type`,`text`,3,`ngModelChange`,`ngModel`],[`align`,`end`],[`mat-button`,``,`type`,`button`,3,`click`],[`color`,`primary`,`mat-flat-button`,``,`type`,`submit`,3,`disabled`]],template:function(e,n){if(e&1){let a=P_();Fs(0,`form`,1,0),Sv(`submit`,function(o){return Sh(a),o.preventDefault(),xh(n.submit())}),Fs(2,`h1`,2),wN(3),$N(4,`translate`),bd(),Fs(5,`mat-dialog-content`)(6,`div`,3)(7,`mat-form-field`)(8,`mat-label`),wN(9),$N(10,`translate`),bd(),Fs(11,`mat-select`,4),FT(),rE(`ngModelChange`,function(o){return Sh(a),CN(n.attachmentCopy.type,o)||(n.attachmentCopy.type=o),xh(o)}),x_(12,ra,3,4,`mat-option`,5,n.trackByIndex,!0),bd()(),Fs(14,`mat-form-field`)(15,`mat-label`),wN(16),$N(17,`translate`),bd(),Fs(18,`input`,6),$N(19,`translate`),FT(),rE(`ngModelChange`,function(o){return Sh(a),CN(n.attachmentCopy.path,o)||(n.attachmentCopy.path=o),xh(o)}),bd()(),Fs(20,`mat-form-field`)(21,`mat-label`),wN(22),$N(23,`translate`),bd(),Fs(24,`input`,7),FT(),rE(`ngModelChange`,function(o){return Sh(a),CN(n.attachmentCopy.title,o)||(n.attachmentCopy.title=o),xh(o)}),bd()()()(),Fs(25,`mat-dialog-actions`,8)(26,`button`,9),Sv(`click`,function(){return n.close()}),wN(27),$N(28,`translate`),bd(),Fs(29,`button`,10)(30,`mat-icon`),wN(31,`save`),bd(),wN(32),$N(33,`translate`),bd()()()}if(e&2){let a=K_(1);Jb(3),Md(` `,WN(4,11,n.attachmentCopy.id?n.T.F.ATTACHMENT.DIALOG_EDIT.EDIT_ATTACHMENT:n.T.F.ATTACHMENT.DIALOG_EDIT.ADD_ATTACHMENT),` `),Jb(6),Jv(WN(10,13,n.T.F.ATTACHMENT.DIALOG_EDIT.SELECT_TYPE)),Jb(2),nE(`ngModel`,n.attachmentCopy.type),VT(),Jb(),A_(n.types),Jb(4),Jv(WN(17,15,n.mapTypeToLabel(n.attachmentCopy.type))),Jb(2),nE(`ngModel`,n.attachmentCopy.path),vv(`placeholder`,WN(19,17,n.mapTypeToPlaceholder(n.attachmentCopy.type))),VT(),Jb(4),Jv(WN(23,19,n.T.G.TITLE)),Jb(2),nE(`ngModel`,n.attachmentCopy.title),VT(),Jb(3),Md(` `,WN(28,21,n.T.G.CANCEL),` `),Jb(2),vv(`disabled`,!a.valid),Jb(3),Md(` `,WN(33,23,n.T.G.SAVE),` `)}},dependencies:[Un,Ln,We,Tn,Pn,lt,on$1,Qt,oi,si$1,ni,Ue$1,kt,nn$1,dt$1,ri,ft,zs,Jr],styles:[`[dir=rtl][_nghost-%COMP%]   h1[_ngcontent-%COMP%], [dir=rtl]   [_nghost-%COMP%]   h1[_ngcontent-%COMP%], [dir=rtl][_nghost-%COMP%]   mat-dialog-actions[_ngcontent-%COMP%], [dir=rtl]   [_nghost-%COMP%]   mat-dialog-actions[_ngcontent-%COMP%]{direction:rtl}.custom-icon-wrapper[_ngcontent-%COMP%]{display:flex;flex-wrap:wrap;flex-direction:column}.form-wrapper[_ngcontent-%COMP%]{display:flex;flex-direction:column}@media screen and (min-width:600px){.form-wrapper[_ngcontent-%COMP%]{min-width:500px}}`]})}}return r})()});var Ze;var uo;var sa;var la;var Je;var tn=I(()=>{"use strict";g();N$1();Ze=r=>{if(!r.dataTransfer)throw new Error(`No drop data`);let c=r.dataTransfer.getData(`text`);return c?sa(c):la(r.dataTransfer)},uo=r=>{let c=r.dataTransfer;return c?`${c.getData(`text/uri-list`)}
+${c.getData(`text/plain`)}`.split(/[\r\n]+/).map(e=>e.trim()).find(e=>/^https?:\/\/\S+$/i.test(e))??null:null},sa=r=>{if(r&&!r.match(/\n/)){let c=r;c.match(/^http/)||(c=`//`+c);let t=l(c);return{title:Je(r),path:c,type:t?`IMG`:`LINK`,icon:t?e.IMG:e.LINK}}return null},la=r=>{let c=r.files[0];if(!c)return null;let t=window.ea?.getPathForFile?.(c)||c.name;return t?{title:Je(c.name||t),path:t,type:`FILE`,icon:e.FILE}:null},Je=r=>{let c=r.trim(),t;if(c[c.length-1]===`/`){let e=c.substring(0,c.length-2);t=e.substring(e.lastIndexOf(`/`)+1)}else t=c.substring(c.lastIndexOf(`/`)+1);return t.lastIndexOf(`.`)!==-1&&(t=t.substring(0,t.lastIndexOf(`.`))),t}});var ko;var ca=I(()=>{"use strict";DM();Yt();u();Qe();be$1();Gr();tn();p();L();DM();ko=(()=>{class r{constructor(){this._store$=M(w$1),this._matDialog=M(et)}addAttachment(t,e){if(!e){A$1.err(`No valid attachment passed`);return}this._store$.dispatch(Br({taskId:t,taskAttachment:F(E({},e),{id:i$1()})}))}deleteAttachment(t,e){this._store$.dispatch(Kr({taskId:t,id:e}))}updateAttachment(t,e,n){this._store$.dispatch(Wr({taskId:t,taskAttachment:{id:e,changes:n}}))}createFromDrop(t,e,n=!1){this._handleInput(Ze(t),t,e,n)}_handleInput(t,e,n,a=!1){if(!t||!t.path)return;let i=e.target;!a&&M$2(i)||(e.preventDefault(),e.stopPropagation(),this._matDialog.open(Ye,{restoreFocus:!0,data:{attachment:F(E({},t),{taskId:n})}}).afterClosed().subscribe(o=>{o&&(o.id?this.updateAttachment(n,o.id,o):this.addAttachment(n,o))}))}static{this.ɵfac=function(e){return new(e||r)}}static{this.ɵprov=oe({token:r,factory:r.ɵfac,providedIn:`root`})}}return r})()});var en;var nn=I(()=>{"use strict";A();en=()=>N(null,null,function*(){if(!i)throw new Error(`Default clipboard images path is only available in Electron`);return`${yield window.ea.getUserDataPath()}${!window.ea.isLinux()&&!window.ea.isMacOS()?`\\`:`/`}clipboard-images`})});var an;var da;var on=I(()=>{"use strict";an={"image/png":`.png`,"image/jpeg":`.jpg`,"image/gif":`.gif`,"image/webp":`.webp`,"image/svg+xml":`.svg`,"image/bmp":`.bmp`},da={".png":`image/png`,".jpg":`image/jpeg`,".jpeg":`image/jpeg`,".gif":`image/gif`,".webp":`image/webp`,".svg":`image/svg+xml`,".bmp":`image/bmp`},Object.keys(da)});var K;var ga;var ua;var w;var rn;var It;var zo;var pa=I(()=>{"use strict";DM();A();Ja();_();M$1();nn();on();p();DM();K=r=>{let c=r.replace(/\\/g,`/`);return c.startsWith(`/`)?`file://${encodeURI(c)}`:`file:///${encodeURI(c)}`},ga=`sp-clipboard-images`,ua=1,w=`images`,rn=2097152,It=`indexeddb://clipboard-images/`,zo=(()=>{class r{constructor(){this._snackService=M(Wt),this._globalConfigService=M(si),this._db=null,this._dbPromise=null,this._blobUrlCache=new Map}handlePasteWithProgress(t){let e=t.clipboardData;if(!e||!this._hasImageInClipboard(e))return null;return{placeholderText:`![Saving image...]()`,resultPromise:this._saveImageFromClipboard(e)}}_hasImageInClipboard(t){for(let e=0;e<t.items.length;e++)if(t.items[e].type.startsWith(`image/`))return!0;for(let e=0;e<t.files.length;e++)if(t.files[e].type.startsWith(`image/`))return!0;return!1}_saveImageFromClipboard(t){return N(this,null,function*(){if(i){if(t.files&&t.files.length>0)for(let i=0;i<t.files.length;i++){let o=t.files[i];if(o.type.startsWith(`image/`))try{let s=window.ea.getPathForFile(o);if(s){let d=yield this._getElectronImagePath(),p=yield window.ea.copyClipboardImageFile(d,s);if(p){let u=yield window.ea.getClipboardImagePath(d,p.id);if(u){let m=K(u),L=`![${(o.name||`image`).replace(/\.[^.]+$/,``)}](${m})`;return this._snackService.open({type:`SUCCESS`,msg:T.F.CLIPBOARD_IMAGE.PASTE_SUCCESS}),{success:!0,imageUrl:m,markdownText:L}}}}}catch(s){c.err(`[CLIPBOARD] Error getting file path:`,s)}}let n=yield this._getElectronImagePath(),a=yield window.ea.readClipboardImage(n);if(a){let i=yield window.ea.getClipboardImagePath(n,a.id);if(i){let o=K(i),s=`![pasted image](${o})`;return this._snackService.open({type:`SUCCESS`,msg:T.F.CLIPBOARD_IMAGE.PASTE_SUCCESS}),{success:!0,imageUrl:o,markdownText:s}}}}let e=yield this._extractImageFromClipboard(t);if(!e)return{success:!1};try{let n=yield this.saveImage(e);if(!n)return{success:!1,errorMessage:`Failed to save image`};let a=`![pasted image](${n})`;return this._snackService.open({type:`SUCCESS`,msg:T.F.CLIPBOARD_IMAGE.PASTE_SUCCESS}),{success:!0,imageUrl:n,markdownText:a}}catch(n){return c.err(`[CLIPBOARD] Error saving clipboard image:`,n),c.err(`[CLIPBOARD] Error stack:`,n instanceof Error?n.stack:`no stack`),{success:!1,errorMessage:n instanceof Error?n.message:`Unknown error`}}})}_tryGetImageFromFilePaths(){return N(this,null,function*(){try{let t=yield window.ea.getClipboardFilePaths();if(!t||t.length===0){let u=yield this._getElectronImagePath(),m=yield window.ea.readClipboardImage(u);if(m){let _=yield window.ea.getClipboardImagePath(u,m.id);if(_){let y=K(_),L=`![pasted image](${y})`;return this._snackService.open({type:`SUCCESS`,msg:T.F.CLIPBOARD_IMAGE.PASTE_SUCCESS}),{success:!0,imageUrl:y,markdownText:L}}}return null}let e=t[0],n=yield this._getElectronImagePath(),a=yield window.ea.copyClipboardImageFile(n,e);if(!a)return null;let i=yield window.ea.getClipboardImagePath(n,a.id);if(!i)return null;let o=K(i),p=`![${(e.split(/[\\/]/).pop()||`image`).replace(/\.[^.]+$/,``)}](${o})`;return this._snackService.open({type:`SUCCESS`,msg:T.F.CLIPBOARD_IMAGE.PASTE_SUCCESS}),{success:!0,imageUrl:o,markdownText:p}}catch(t){return c.err(`Error getting image from file paths:`,t),null}})}_extractImageFromClipboard(t){return N(this,null,function*(){for(let e=0;e<t.items.length;e++){let n=t.items[e];if(n.type.startsWith(`image/`)){let a=n.getAsFile();if(a)return a}}for(let e=0;e<t.files.length;e++){let n=t.files[e];if(n.type.startsWith(`image/`))return n}return null})}isIndexedDbUrl(t){return t.startsWith(It)}extractImageId(t){let e=t.match(/^indexeddb:\/\/clipboard-images\/([^?\s=]+)/);return e?e[1]:null}hasResolvableImages(t){return t.includes(It)||i&&t.includes(`/clipboard-images/`)}resolveMarkdownImages(t){return N(this,null,function*(){let e=t,n=t.match(/indexeddb:\/\/clipboard-images\/[^)\s=]+/g);if(n){let a=[...new Set(n)],i=new Map;yield Promise.all(a.map(o=>N(this,null,function*(){let s=yield this.resolveIndexedDbUrl(o);s&&i.set(o,s)})));for(let[o,s]of i)e=e.split(o).join(s)}if(i){let a=/file:\/\/\/[^)\s"]*\/clipboard-images\/[^)\s"/]+\.[a-z]{2,5}/g,i=new Map,o;for(;(o=a.exec(e))!==null;){let s=o[0],p=(s.split(`/`).pop()??``).replace(/\.[^.]+$/,``);p&&i.set(s,p)}i.size>0&&(yield Promise.all([...i.entries()].map(p=>N(this,[p],function*([s,d]){let u=`electron-file:${d}`,m=this._blobUrlCache.get(u);if(m)e=e.split(s).join(m);else{let _=yield this._getImageElectron(d);if(_){let y=URL.createObjectURL(_);this._blobUrlCache.set(u,y),e=e.split(s).join(y)}}}))))}return e})}resolveClipboardImageUrl(t){return N(this,null,function*(){if(this.isIndexedDbUrl(t))return this.resolveIndexedDbUrl(t);if(i&&t.startsWith(`file:///`)&&t.includes(`/clipboard-images/`)){let n=(t.split(`/`).pop()??``).replace(/\.[^.]+$/,``);if(!n)return null;let a=`electron-file:${n}`,i=this._blobUrlCache.get(a);if(i)return i;let o=yield this._getImageElectron(n);if(!o)return null;let s=URL.createObjectURL(o);return this._blobUrlCache.set(a,s),s}return null})}resolveIndexedDbUrl(t){return N(this,null,function*(){if(!this.isIndexedDbUrl(t))return null;let e=this.extractImageId(t);if(!e)return null;let n=this._blobUrlCache.get(e);if(n)return n;try{let a=yield this.getImage(e);if(!a)return null;let i=URL.createObjectURL(a);return this._blobUrlCache.set(e,i),i}catch(a){return c.err(`Error resolving indexeddb URL for clipboard image:`,a),null}})}saveImage(t,e){return N(this,null,function*(){if(!i&&t.size>rn)return this._snackService.open({type:`ERROR`,msg:T.F.CLIPBOARD_IMAGE.SIZE_EXCEEDED,translateParams:{maxSize:this._formatSize(rn),actualSize:this._formatSize(t.size)}}),null;let n=e||this._generateImageId(),a=t.type||`image/png`;return i?this._saveImageElectron(n,t,a):this._saveImageWeb(n,t,a)})}getImage(t){return N(this,null,function*(){return i?this._getImageElectron(t):this._getImageWeb(t)})}deleteImage(t){return N(this,null,function*(){return i?this._deleteImageElectron(t):this._deleteImageWeb(t)})}listImages(){return N(this,null,function*(){return i?this._listImagesElectron():this._listImagesWeb()})}getImageUrl(t){return`${It}${t}`}_generateImageId(){return`clip-${Date.now()}-${Math.random().toString(36).substring(2,10)}`}_getDb(){return N(this,null,function*(){return this._db?this._db:this._dbPromise?this._dbPromise:(this._dbPromise=new Promise((t,e)=>{let n=indexedDB.open(ga,ua);n.onerror=()=>{e(new Error(`Failed to open clipboard images database`))},n.onsuccess=()=>{this._db=n.result,t(n.result)},n.onupgradeneeded=a=>{let i=a.target.result;i.objectStoreNames.contains(w)||i.createObjectStore(w,{keyPath:`id`}).createIndex(`createdAt`,`createdAt`,{unique:!1})}}),this._dbPromise)})}_saveImageWeb(t,e,n){return N(this,null,function*(){let a=yield this._getDb(),i={id:t,blob:e,mimeType:n,createdAt:Date.now(),size:e.size};return new Promise((o,s)=>{let u=a.transaction([w],`readwrite`).objectStore(w).put(i);u.onsuccess=()=>o(this.getImageUrl(t)),u.onerror=()=>{u.error?.name===`QuotaExceededError`?(this._snackService.open({type:`ERROR`,msg:T.F.CLIPBOARD_IMAGE.STORAGE_QUOTA_EXCEEDED}),s(new Error(`Storage quota exceeded`))):s(new Error(`Failed to save clipboard image`))}})})}_getImageWeb(t){return N(this,null,function*(){let e=yield this._getDb();return new Promise((n,a)=>{let s=e.transaction([w],`readonly`).objectStore(w).get(t);s.onsuccess=()=>{let d=s.result;n(d?.blob??null)},s.onerror=()=>a(new Error(`Failed to get clipboard image`))})})}_deleteImageWeb(t){return N(this,null,function*(){let e=this._blobUrlCache.get(t);e&&(URL.revokeObjectURL(e),this._blobUrlCache.delete(t));let n=yield this._getDb();return new Promise((a,i)=>{let d=n.transaction([w],`readwrite`).objectStore(w).delete(t);d.onsuccess=()=>a(!0),d.onerror=()=>i(new Error(`Failed to delete clipboard image`))})})}_listImagesWeb(){return N(this,null,function*(){let t=yield this._getDb();return new Promise((e,n)=>{let o=t.transaction([w],`readonly`).objectStore(w).getAll();o.onsuccess=()=>{let s=o.result;e(s.map(d=>({id:d.id,mimeType:d.mimeType,createdAt:d.createdAt,size:d.size})))},o.onerror=()=>n(new Error(`Failed to list clipboard images`))})})}_getElectronImagePath(){return N(this,null,function*(){return this._globalConfigService.clipboardImages()?.imagePath||en()})}_saveImageElectron(t,e,n){return N(this,null,function*(){let a=yield this._getElectronImagePath(),o=`${t}${this._getExtensionFromMimeType(n)}`,s=yield e.arrayBuffer(),d=this._arrayBufferToBase64(s),p=yield window.ea.saveClipboardImage(a,o,d,n);return K(p)})}_getImageElectron(t){return N(this,null,function*(){let e=yield this._getElectronImagePath(),n=yield window.ea.loadClipboardImage(e,t);if(!n)return null;let a=atob(n.base64),i=new Uint8Array(a.length);for(let o=0;o<a.length;o++)i[o]=a.charCodeAt(o);return new Blob([i],{type:n.mimeType})})}_deleteImageElectron(t){return N(this,null,function*(){let e=`electron-file:${t}`,n=this._blobUrlCache.get(e);n&&(URL.revokeObjectURL(n),this._blobUrlCache.delete(e));let a=yield this._getElectronImagePath();return window.ea.deleteClipboardImage(a,t)})}_listImagesElectron(){return N(this,null,function*(){let t=yield this._getElectronImagePath();return window.ea.listClipboardImages(t)})}_formatSize(t){return t<1024?`${t} B`:t<1048576?`${(t/1024).toFixed(1)} KB`:`${(t/1048576).toFixed(1)} MB`}_getExtensionFromMimeType(t){return an[t]||`.png`}_arrayBufferToBase64(t){let e=``,n=new Uint8Array(t);for(let a=0;a<n.byteLength;a++)e+=String.fromCharCode(n[a]);return btoa(e)}static{this.ɵfac=function(e){return new(e||r)}}static{this.ɵprov=oe({token:r,factory:r.ɵfac,providedIn:`root`})}}return r})()});var sn;var ln;var _a;var st;var xa;var Ia;var Sa=I(()=>{"use strict";Ji();bi();D$1();Kr$1();qt();DM();DM();hn();pt();dt();ct();Wi();sn=new O(`MAT_BUTTON_TOGGLE_DEFAULT_OPTIONS`,{providedIn:`root`,factory:()=>({hideSingleSelectionIndicator:!1,hideMultipleSelectionIndicator:!1,disabledInteractive:!1})}),ln=new O(`MatButtonToggleGroup`),_a={provide:F$1,useExisting:Fi(()=>xa),multi:!0},st=class{source;value;constructor(c,t){this.source=c,this.value=t}},xa=(()=>{class r{_changeDetector=M(u2);_dir=M(Ur,{optional:!0});_multiple=!1;_disabled=!1;_disabledInteractive=!1;_selectionModel;_rawValue;_controlValueAccessorChangeFn=()=>{};_onTouched=()=>{};_buttonToggles;appearance;get name(){return this._name}set name(t){this._name=t,this._markButtonsForCheck()}_name=M(Jt).getId(`mat-button-toggle-group-`);vertical=!1;get value(){let t=this._selectionModel?this._selectionModel.selected:[];return this.multiple?t.map(e=>e.value):t[0]?t[0].value:void 0}set value(t){this._setSelectionByValue(t),this.valueChange.emit(this.value)}valueChange=new ut;get selected(){let t=this._selectionModel?this._selectionModel.selected:[];return this.multiple?t:t[0]||null}get multiple(){return this._multiple}set multiple(t){this._multiple=t,this._markButtonsForCheck()}get disabled(){return this._disabled}set disabled(t){this._disabled=t,this._markButtonsForCheck()}get disabledInteractive(){return this._disabledInteractive}set disabledInteractive(t){this._disabledInteractive=t,this._markButtonsForCheck()}get dir(){return this._dir&&this._dir.value===`rtl`?`rtl`:`ltr`}change=new ut;get hideSingleSelectionIndicator(){return this._hideSingleSelectionIndicator}set hideSingleSelectionIndicator(t){this._hideSingleSelectionIndicator=t,this._markButtonsForCheck()}_hideSingleSelectionIndicator;get hideMultipleSelectionIndicator(){return this._hideMultipleSelectionIndicator}set hideMultipleSelectionIndicator(t){this._hideMultipleSelectionIndicator=t,this._markButtonsForCheck()}_hideMultipleSelectionIndicator;constructor(){let t=M(sn,{optional:!0});this.appearance=t&&t.appearance?t.appearance:`standard`,this._hideSingleSelectionIndicator=t?.hideSingleSelectionIndicator??!1,this._hideMultipleSelectionIndicator=t?.hideMultipleSelectionIndicator??!1}ngOnInit(){this._selectionModel=new u$1(this.multiple,void 0,!1)}ngAfterContentInit(){this._selectionModel.select(...this._buttonToggles.filter(t=>t.checked)),this.multiple||this._initializeTabIndex()}writeValue(t){this.value=t,this._changeDetector.markForCheck()}registerOnChange(t){this._controlValueAccessorChangeFn=t}registerOnTouched(t){this._onTouched=t}setDisabledState(t){this.disabled=t}_keydown(t){if(this.multiple||this.disabled||Vr(t))return;let n=t.target.id,a=this._buttonToggles.toArray().findIndex(o=>o.buttonId===n),i=null;switch(t.keyCode){case 32:case 13:i=this._buttonToggles.get(a)||null;break;case 38:i=this._getNextButton(a,-1);break;case 37:i=this._getNextButton(a,this.dir===`ltr`?-1:1);break;case 40:i=this._getNextButton(a,1);break;case 39:i=this._getNextButton(a,this.dir===`ltr`?1:-1);break;default:return}i&&(t.preventDefault(),i._onButtonClick(),i.focus())}_emitChangeEvent(t){let e=new st(t,this.value);this._rawValue=e.value,this._controlValueAccessorChangeFn(e.value),this.change.emit(e)}_syncButtonToggle(t,e,n=!1,a=!1){!this.multiple&&this.selected&&!t.checked&&(this.selected.checked=!1),this._selectionModel?e?this._selectionModel.select(t):this._selectionModel.deselect(t):a=!0,a?Promise.resolve().then(()=>this._updateModelValue(t,n)):this._updateModelValue(t,n)}_isSelected(t){return this._selectionModel&&this._selectionModel.isSelected(t)}_isPrechecked(t){return typeof this._rawValue>`u`?!1:this.multiple&&Array.isArray(this._rawValue)?this._rawValue.some(e=>t.value!=null&&e===t.value):t.value===this._rawValue}_initializeTabIndex(){if(this._buttonToggles.forEach(t=>{t.tabIndex=-1}),this.selected)this.selected.tabIndex=0;else for(let t=0;t<this._buttonToggles.length;t++){let e=this._buttonToggles.get(t);if(!e.disabled){e.tabIndex=0;break}}}_getNextButton(t,e){let n=this._buttonToggles;for(let a=1;a<=n.length;a++){let i=(t+e*a+n.length)%n.length,o=n.get(i);if(o&&!o.disabled)return o}return null}_setSelectionByValue(t){if(this._rawValue=t,!this._buttonToggles)return;let e=this._buttonToggles.toArray();if(this.multiple&&t?(this._clearSelection(),t.forEach(n=>this._selectValue(n,e))):(this._clearSelection(),this._selectValue(t,e)),!this.multiple&&e.every(n=>n.tabIndex===-1)){for(let n of e)if(!n.disabled){n.tabIndex=0;break}}}_clearSelection(){this._selectionModel.clear(),this._buttonToggles.forEach(t=>{t.checked=!1,this.multiple||(t.tabIndex=-1)})}_selectValue(t,e){for(let n of e)if(n.value===t){n.checked=!0,this._selectionModel.select(n),this.multiple||(n.tabIndex=0);break}}_updateModelValue(t,e){e&&this._emitChangeEvent(t),this.valueChange.emit(this.value)}_markButtonsForCheck(){this._buttonToggles?.forEach(t=>t._markForCheck())}static ɵfac=function(e){return new(e||r)};static ɵdir=SC({type:r,selectors:[[`mat-button-toggle-group`]],contentQueries:function(e,n,a){if(e&1&&Rv(a,Ia,5),e&2){let i;Q_(i=Z_())&&(n._buttonToggles=i)}},hostAttrs:[1,`mat-button-toggle-group`],hostVars:6,hostBindings:function(e,n){e&1&&Sv(`keydown`,function(i){return n._keydown(i)}),e&2&&(yv(`role`,n.multiple?`group`:`radiogroup`)(`aria-disabled`,n.disabled),Bv(`mat-button-toggle-vertical`,n.vertical)(`mat-button-toggle-group-appearance-standard`,n.appearance===`standard`))},inputs:{appearance:`appearance`,name:`name`,vertical:[2,`vertical`,`vertical`,f2],value:`value`,multiple:[2,`multiple`,`multiple`,f2],disabled:[2,`disabled`,`disabled`,f2],disabledInteractive:[2,`disabledInteractive`,`disabledInteractive`,f2],hideSingleSelectionIndicator:[2,`hideSingleSelectionIndicator`,`hideSingleSelectionIndicator`,f2],hideMultipleSelectionIndicator:[2,`hideMultipleSelectionIndicator`,`hideMultipleSelectionIndicator`,f2]},outputs:{valueChange:`valueChange`,change:`change`},exportAs:[`matButtonToggleGroup`],features:[LN([_a,{provide:ln,useExisting:r}])]})}return r})(),Ia=(()=>{class r{_changeDetectorRef=M(u2);_elementRef=M(xo);_focusMonitor=M(rs);_idGenerator=M(Jt);_animationDisabled=pd();_checked=!1;ariaLabel;ariaLabelledby=null;_buttonElement;buttonToggleGroup;get buttonId(){return`${this.id}-button`}id;name;value;get tabIndex(){return this._tabIndex()}set tabIndex(t){this._tabIndex.set(t)}_tabIndex;disableRipple=!1;get appearance(){return this.buttonToggleGroup?this.buttonToggleGroup.appearance:this._appearance}set appearance(t){this._appearance=t}_appearance;get checked(){return this.buttonToggleGroup?this.buttonToggleGroup._isSelected(this):this._checked}set checked(t){t!==this._checked&&(this._checked=t,this.buttonToggleGroup&&this.buttonToggleGroup._syncButtonToggle(this,this._checked),this._changeDetectorRef.markForCheck())}get disabled(){return this._disabled||this.buttonToggleGroup&&this.buttonToggleGroup.disabled}set disabled(t){this._disabled=t}_disabled=!1;get disabledInteractive(){return this._disabledInteractive||this.buttonToggleGroup!==null&&this.buttonToggleGroup.disabledInteractive}set disabledInteractive(t){this._disabledInteractive=t}_disabledInteractive;change=new ut;constructor(){M(Ue).load(It$1);let t=M(ln,{optional:!0}),e=M(new yE(`tabindex`),{optional:!0})||``,n=M(sn,{optional:!0});this._tabIndex=is(parseInt(e)||0),this.buttonToggleGroup=t,this._appearance=n&&n.appearance?n.appearance:`standard`,this._disabledInteractive=n?.disabledInteractive??!1}ngOnInit(){let t=this.buttonToggleGroup;this.id=this.id||this._idGenerator.getId(`mat-button-toggle-`),t&&(t._isPrechecked(this)?this.checked=!0:t._isSelected(this)!==this._checked&&t._syncButtonToggle(this,this._checked))}ngAfterViewInit(){this._animationDisabled||this._elementRef.nativeElement.classList.add(`mat-button-toggle-animations-enabled`),this._focusMonitor.monitor(this._elementRef,!0)}ngOnDestroy(){let t=this.buttonToggleGroup;this._focusMonitor.stopMonitoring(this._elementRef),t&&t._isSelected(this)&&t._syncButtonToggle(this,!1,!1,!0)}focus(t){this._buttonElement.nativeElement.focus(t)}_onButtonClick(){if(this.disabled)return;let t=this.isSingleSelector()?!0:!this._checked;if(t!==this._checked&&(this._checked=t,this.buttonToggleGroup&&(this.buttonToggleGroup._syncButtonToggle(this,this._checked,!0),this.buttonToggleGroup._onTouched())),this.isSingleSelector()){let e=this.buttonToggleGroup._buttonToggles.find(n=>n.tabIndex===0);e&&(e.tabIndex=-1),this.tabIndex=0}this.change.emit(new st(this,this.value))}_markForCheck(){this._changeDetectorRef.markForCheck()}_getButtonName(){return this.isSingleSelector()?this.buttonToggleGroup.name:this.name||null}isSingleSelector(){return this.buttonToggleGroup&&!this.buttonToggleGroup.multiple}static ɵfac=function(e){return new(e||r)};static ɵcmp=(function(){let t=[`button`],e=[`*`];function n(a,i){if(a&1&&(Fs(0,`div`,2),Ev(1,`mat-pseudo-checkbox`,6),bd()),a&2){let o=U_();Jb(),vv(`disabled`,o.disabled)}}return CC({type:r,selectors:[[`mat-button-toggle`]],viewQuery:function(i,o){if(i&1&&Ov(t,5),i&2){let s;Q_(s=Z_())&&(o._buttonElement=s.first)}},hostAttrs:[`role`,`presentation`,1,`mat-button-toggle`],hostVars:14,hostBindings:function(i,o){i&1&&Sv(`focus`,function(){return o.focus()}),i&2&&(yv(`aria-label`,null)(`aria-labelledby`,null)(`id`,o.id)(`name`,null),Bv(`mat-button-toggle-standalone`,!o.buttonToggleGroup)(`mat-button-toggle-checked`,o.checked)(`mat-button-toggle-disabled`,o.disabled)(`mat-button-toggle-disabled-interactive`,o.disabledInteractive)(`mat-button-toggle-appearance-standard`,o.appearance===`standard`))},inputs:{ariaLabel:[0,`aria-label`,`ariaLabel`],ariaLabelledby:[0,`aria-labelledby`,`ariaLabelledby`],id:`id`,name:`name`,value:`value`,tabIndex:`tabIndex`,disableRipple:[2,`disableRipple`,`disableRipple`,f2],appearance:`appearance`,checked:[2,`checked`,`checked`,f2],disabled:[2,`disabled`,`disabled`,f2],disabledInteractive:[2,`disabledInteractive`,`disabledInteractive`,f2]},outputs:{change:`change`},exportAs:[`matButtonToggle`],ngContentSelectors:e,decls:7,vars:13,consts:[[`button`,``],[`type`,`button`,1,`mat-button-toggle-button`,`mat-focus-indicator`,3,`click`,`id`,`disabled`],[1,`mat-button-toggle-checkbox-wrapper`],[1,`mat-button-toggle-label-content`],[1,`mat-button-toggle-focus-overlay`],[`matRipple`,``,1,`mat-button-toggle-ripple`,3,`matRippleTrigger`,`matRippleDisabled`],[`state`,`checked`,`aria-hidden`,`true`,`appearance`,`minimal`,3,`disabled`]],template:function(i,o){if(i&1&&(q_(),Fs(0,`button`,1,0),Sv(`click`,function(){return o._onButtonClick()}),C_(2,n,2,1,`div`,2),Fs(3,`span`,3),G_(4),bd()(),Ev(5,`span`,4)(6,`span`,5)),i&2){let s=K_(1);vv(`id`,o.buttonId)(`disabled`,o.disabled&&!o.disabledInteractive||null),yv(`role`,o.isSingleSelector()?`radio`:`button`)(`tabindex`,o.disabled&&!o.disabledInteractive?-1:o.tabIndex)(`aria-pressed`,o.isSingleSelector()?null:o.checked)(`aria-checked`,o.isSingleSelector()?o.checked:null)(`name`,o._getButtonName())(`aria-label`,o.ariaLabel)(`aria-labelledby`,o.ariaLabelledby)(`aria-disabled`,o.disabled&&o.disabledInteractive?`true`:null),Jb(2),N_(o.buttonToggleGroup&&(!o.buttonToggleGroup.multiple&&!o.buttonToggleGroup.hideSingleSelectionIndicator||o.buttonToggleGroup.multiple&&!o.buttonToggleGroup.hideMultipleSelectionIndicator)?2:-1),Jb(4),vv(`matRippleTrigger`,s)(`matRippleDisabled`,o.disableRipple||o.disabled)}},dependencies:[Dt,rt],styles:[`.mat-button-toggle-standalone,
+.mat-button-toggle-group {
+  position: relative;
+  display: inline-flex;
+  flex-direction: row;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-tap-highlight-color: transparent;
+  border-radius: var(--%NS%mat-button-toggle-legacy-shape);
+  transform: translateZ(0);
+}
+.mat-button-toggle-standalone:not([class*=mat-elevation-z]),
+.mat-button-toggle-group:not([class*=mat-elevation-z]) {
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+@media (forced-colors: active) {
+  .mat-button-toggle-standalone,
+  .mat-button-toggle-group {
+    outline: solid 1px;
+  }
+}
+
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
+.mat-button-toggle-group-appearance-standard {
+  border-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+  border: solid 1px var(--%NS%mat-button-toggle-divider-color, var(--%NS%mat-sys-outline));
+}
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard .mat-pseudo-checkbox,
+.mat-button-toggle-group-appearance-standard .mat-pseudo-checkbox {
+  --%NS%mat-pseudo-checkbox-minimal-selected-checkmark-color: var(--%NS%mat-button-toggle-selected-state-text-color, var(--%NS%mat-sys-on-secondary-container));
+}
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard:not([class*=mat-elevation-z]),
+.mat-button-toggle-group-appearance-standard:not([class*=mat-elevation-z]) {
+  box-shadow: none;
+}
+@media (forced-colors: active) {
+  .mat-button-toggle-standalone.mat-button-toggle-appearance-standard,
+  .mat-button-toggle-group-appearance-standard {
+    outline: 0;
+  }
+}
+
+.mat-button-toggle-vertical {
+  flex-direction: column;
+}
+.mat-button-toggle-vertical .mat-button-toggle-label-content {
+  display: block;
+}
+
+.mat-button-toggle {
+  white-space: nowrap;
+  position: relative;
+  color: var(--%NS%mat-button-toggle-legacy-text-color);
+  font-family: var(--%NS%mat-button-toggle-legacy-label-text-font);
+  font-size: var(--%NS%mat-button-toggle-legacy-label-text-size);
+  line-height: var(--%NS%mat-button-toggle-legacy-label-text-line-height);
+  font-weight: var(--%NS%mat-button-toggle-legacy-label-text-weight);
+  letter-spacing: var(--%NS%mat-button-toggle-legacy-label-text-tracking);
+  --%NS%mat-pseudo-checkbox-minimal-selected-checkmark-color: var(--%NS%mat-button-toggle-legacy-selected-state-text-color);
+}
+.mat-button-toggle.cdk-keyboard-focused .mat-button-toggle-focus-overlay {
+  opacity: var(--%NS%mat-button-toggle-legacy-focus-state-layer-opacity);
+}
+.mat-button-toggle .mat-icon svg {
+  vertical-align: top;
+}
+
+.mat-button-toggle-checkbox-wrapper {
+  display: inline-block;
+  justify-content: flex-start;
+  align-items: center;
+  width: 0;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translate3d(0, -50%, 0);
+}
+[dir=rtl] .mat-button-toggle-checkbox-wrapper {
+  left: auto;
+  right: 16px;
+}
+.mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper {
+  left: 12px;
+}
+[dir=rtl] .mat-button-toggle-appearance-standard .mat-button-toggle-checkbox-wrapper {
+  left: auto;
+  right: 12px;
+}
+.mat-button-toggle-checked .mat-button-toggle-checkbox-wrapper {
+  width: 18px;
+}
+.mat-button-toggle-animations-enabled .mat-button-toggle-checkbox-wrapper {
+  transition: width 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mat-button-toggle-vertical .mat-button-toggle-checkbox-wrapper {
+  transition: none;
+}
+
+.mat-button-toggle-checked {
+  color: var(--%NS%mat-button-toggle-legacy-selected-state-text-color);
+  background-color: var(--%NS%mat-button-toggle-legacy-selected-state-background-color);
+}
+
+.mat-button-toggle-disabled {
+  pointer-events: none;
+  color: var(--%NS%mat-button-toggle-legacy-disabled-state-text-color);
+  background-color: var(--%NS%mat-button-toggle-legacy-disabled-state-background-color);
+  --%NS%mat-pseudo-checkbox-minimal-disabled-selected-checkmark-color: var(--%NS%mat-button-toggle-legacy-disabled-state-text-color);
+}
+.mat-button-toggle-disabled.mat-button-toggle-checked {
+  background-color: var(--%NS%mat-button-toggle-legacy-disabled-selected-state-background-color);
+}
+
+.mat-button-toggle-disabled-interactive {
+  pointer-events: auto;
+}
+
+.mat-button-toggle-appearance-standard {
+  color: var(--%NS%mat-button-toggle-text-color, var(--%NS%mat-sys-on-surface));
+  background-color: var(--%NS%mat-button-toggle-background-color, transparent);
+  font-family: var(--%NS%mat-button-toggle-label-text-font, var(--%NS%mat-sys-label-large-font));
+  font-size: var(--%NS%mat-button-toggle-label-text-size, var(--%NS%mat-sys-label-large-size));
+  line-height: var(--%NS%mat-button-toggle-label-text-line-height, var(--%NS%mat-sys-label-large-line-height));
+  font-weight: var(--%NS%mat-button-toggle-label-text-weight, var(--%NS%mat-sys-label-large-weight));
+  letter-spacing: var(--%NS%mat-button-toggle-label-text-tracking, var(--%NS%mat-sys-label-large-tracking));
+}
+.mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard + .mat-button-toggle-appearance-standard {
+  border-left: solid 1px var(--%NS%mat-button-toggle-divider-color, var(--%NS%mat-sys-outline));
+}
+[dir=rtl] .mat-button-toggle-group-appearance-standard .mat-button-toggle-appearance-standard + .mat-button-toggle-appearance-standard {
+  border-left: none;
+  border-right: solid 1px var(--%NS%mat-button-toggle-divider-color, var(--%NS%mat-sys-outline));
+}
+.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle-appearance-standard + .mat-button-toggle-appearance-standard {
+  border-left: none;
+  border-right: none;
+  border-top: solid 1px var(--%NS%mat-button-toggle-divider-color, var(--%NS%mat-sys-outline));
+}
+.mat-button-toggle-appearance-standard.mat-button-toggle-checked {
+  color: var(--%NS%mat-button-toggle-selected-state-text-color, var(--%NS%mat-sys-on-secondary-container));
+  background-color: var(--%NS%mat-button-toggle-selected-state-background-color, var(--%NS%mat-sys-secondary-container));
+}
+.mat-button-toggle-appearance-standard.mat-button-toggle-disabled {
+  color: var(--%NS%mat-button-toggle-disabled-state-text-color, color-mix(in srgb, var(--%NS%mat-sys-on-surface) 38%, transparent));
+  background-color: var(--%NS%mat-button-toggle-disabled-state-background-color, transparent);
+}
+.mat-button-toggle-appearance-standard.mat-button-toggle-disabled .mat-pseudo-checkbox {
+  --%NS%mat-pseudo-checkbox-minimal-disabled-selected-checkmark-color: var(--%NS%mat-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--%NS%mat-sys-on-surface) 38%, transparent));
+}
+.mat-button-toggle-appearance-standard.mat-button-toggle-disabled.mat-button-toggle-checked {
+  color: var(--%NS%mat-button-toggle-disabled-selected-state-text-color, color-mix(in srgb, var(--%NS%mat-sys-on-surface) 38%, transparent));
+  background-color: var(--%NS%mat-button-toggle-disabled-selected-state-background-color, color-mix(in srgb, var(--%NS%mat-sys-on-surface) 12%, transparent));
+}
+.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay {
+  background-color: var(--%NS%mat-button-toggle-state-layer-color, var(--%NS%mat-sys-on-surface));
+}
+.mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay {
+  opacity: var(--%NS%mat-button-toggle-hover-state-layer-opacity, var(--%NS%mat-sys-hover-state-layer-opacity));
+}
+.mat-button-toggle-appearance-standard.cdk-keyboard-focused .mat-button-toggle-focus-overlay {
+  opacity: var(--%NS%mat-button-toggle-focus-state-layer-opacity, var(--%NS%mat-sys-focus-state-layer-opacity));
+}
+@media (hover: none) {
+  .mat-button-toggle-appearance-standard:hover .mat-button-toggle-focus-overlay {
+    display: none;
+  }
+}
+
+.mat-button-toggle-label-content {
+  -webkit-user-select: none;
+  user-select: none;
+  display: inline-block;
+  padding: 0 16px;
+  line-height: var(--%NS%mat-button-toggle-legacy-height);
+  position: relative;
+}
+.mat-button-toggle-appearance-standard .mat-button-toggle-label-content {
+  padding: 0 12px;
+  line-height: var(--%NS%mat-button-toggle-height, 40px);
+}
+
+.mat-button-toggle-label-content > * {
+  vertical-align: middle;
+}
+
+.mat-button-toggle-focus-overlay {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  border-radius: inherit;
+  pointer-events: none;
+  opacity: 0;
+  background-color: var(--%NS%mat-button-toggle-legacy-state-layer-color);
+}
+
+@media (forced-colors: active) {
+  .mat-button-toggle-checked .mat-button-toggle-focus-overlay {
+    border-bottom: solid 500px;
+    opacity: 0.5;
+    height: 0;
+  }
+  .mat-button-toggle-checked:hover .mat-button-toggle-focus-overlay {
+    opacity: 0.6;
+  }
+  .mat-button-toggle-checked.mat-button-toggle-appearance-standard .mat-button-toggle-focus-overlay {
+    border-bottom: solid 500px;
+  }
+}
+.mat-button-toggle .mat-button-toggle-ripple {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.mat-button-toggle-button {
+  border: 0;
+  background: none;
+  color: inherit;
+  padding: 0;
+  margin: 0;
+  font: inherit;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+}
+.mat-button-toggle-animations-enabled .mat-button-toggle-button {
+  transition: padding 150ms 45ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mat-button-toggle-vertical .mat-button-toggle-button {
+  transition: none;
+}
+.mat-button-toggle-disabled .mat-button-toggle-button {
+  cursor: default;
+}
+.mat-button-toggle-button::-moz-focus-inner {
+  border: 0;
+}
+.mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper) {
+  padding-left: 30px;
+}
+[dir=rtl] .mat-button-toggle-checked .mat-button-toggle-button:has(.mat-button-toggle-checkbox-wrapper) {
+  padding-left: 0;
+  padding-right: 30px;
+}
+
+.mat-button-toggle-standalone.mat-button-toggle-appearance-standard {
+  --%NS%mat-focus-indicator-border-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+}
+
+.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:last-of-type .mat-button-toggle-button::before {
+  border-top-right-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+  border-bottom-right-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+}
+.mat-button-toggle-group-appearance-standard:not(.mat-button-toggle-vertical) .mat-button-toggle:first-of-type .mat-button-toggle-button::before {
+  border-top-left-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+  border-bottom-left-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+}
+
+.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:last-of-type .mat-button-toggle-button::before {
+  border-bottom-right-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+  border-bottom-left-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+}
+.mat-button-toggle-group-appearance-standard.mat-button-toggle-vertical .mat-button-toggle:first-of-type .mat-button-toggle-button::before {
+  border-top-right-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+  border-top-left-radius: var(--%NS%mat-button-toggle-shape, var(--%NS%mat-sys-corner-extra-large));
+}
+`],encapsulation:2})})()}return r})()});export{uo as _,Ua as a,zo as b,Ze as c,ja as d,ko as f,tn as g,pa as h,Sa as i,ca as l,oa as m,Kn as n,Xn as o,nn as p,Qe as r,Ye as s,Ia as t,en as u,xa as v,za as y};

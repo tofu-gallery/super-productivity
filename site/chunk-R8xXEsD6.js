@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";var l;var n=I(()=>{"use strict";l=`useandom-26T198340PX75pxJACKVERYMINDBUSHWOLF_GQZbfghjklqvwyzrict`});var i;var u=I(()=>{"use strict";n();i=(t=21)=>{let e=``,o=crypto.getRandomValues(new Uint8Array(t|=0));for(;t--;)e+=l[o[t]&63];return e}});export{u as n,i as t};

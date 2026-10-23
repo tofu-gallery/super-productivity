@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";import{$ as Hn,O as DM,ai as nm,xt as M}from"./chunk-DpSPTUNa.js";import{a as N,l as Z}from"./chunk-CRSAqM95.js";var f;var s=I(()=>{"use strict";DM();nm();N();f=()=>{let r=M(Z);return Hn(()=>!r.isApplyingRemoteOps())}});export{s as n,f as t};

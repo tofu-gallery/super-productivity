@@ -1,0 +1,1 @@
+import{d as N,o as I}from"./chunk-CKYLy748.js";import{n as N$1,t as C}from"./chunk-DQVzRG1W.js";var n;I(()=>{N$1();n=class extends C{requestReview(){return N(this,null,function*(){})}}})();export{n as StoreReviewWeb};

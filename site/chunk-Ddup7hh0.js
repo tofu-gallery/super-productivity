@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";var g;var a=I(()=>{"use strict";g=(e,r)=>e.length===r.length&&e.every((t,n)=>t===r[n])});export{g as n,a as t};

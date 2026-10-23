@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";var t;var s=I(()=>{t=`19.2.0`});var l;var n=I(()=>{"use strict";s();l={production:!0,stage:!1,version:t}});export{n,l as t};

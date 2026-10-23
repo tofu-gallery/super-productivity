@@ -1,0 +1,1 @@
+import{o as I}from"./chunk-CKYLy748.js";var e;var N=I(()=>{"use strict";(function(i){i.FILE=`insert_drive_file`,i.LINK=`bookmark`,i.IMG=`image`,i.COMMAND=`laptop_windows`,i.NOTE=`note`})(e||(e={}))});export{e as n,N as t};
