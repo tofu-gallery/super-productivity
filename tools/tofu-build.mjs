@@ -4,6 +4,7 @@ import { execFileSync } from 'node:child_process';
 import { cpSync, existsSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { trimSite } from './tofu-site-trim.mjs';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 if (existsSync(join(root, '.env'))) {
@@ -43,6 +44,7 @@ const thirdPartyLicenses = join(root, 'dist/3rdpartylicenses.txt');
 if (existsSync(thirdPartyLicenses)) {
   cpSync(thirdPartyLicenses, join(site, '3rdpartylicenses.txt'));
 }
+trimSite(site);
 // Git must not alter licensed text or the bytes hashed by the service worker.
 writeFileSync(
   join(site, '.gitattributes'),
