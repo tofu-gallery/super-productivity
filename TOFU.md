@@ -10,7 +10,7 @@ Super Productivity is an offline-first to-do list, Pomodoro timer and time-track
 - Database: none on the server. Application data is stored in the user's browser (IndexedDB and local settings), separately for each origin and browser profile.
 - Required environment variables: none. No Tofu account, API key or shared credential is included.
 - Serve over HTTPS in production for service workers and offline support.
-- Size: the site publishes 833 files (358 of them scripts at the site root, mostly the app's code-split chunks). Tofu's Free static hosting publishes at most 500 files per site, so this app needs a plan that hosts bigger sites.
+- Size: the site publishes 833 files (358 of them scripts at the site root, mostly the app's code-split chunks). A gallery copy goes online on any plan, Free included, on Tofu's server hosting, because the site is bigger than the Free plan's static hosting takes (at most 500 files).
 
 ## Rebuilding the static copy
 
@@ -66,3 +66,7 @@ The trim was applied to the build above with `node tools/tofu-site-trim.mjs site
 1. It removed the three Google Calendar plugin files and `assets/test-plugin.zip`, and removed exactly one 50-byte list entry from `site/chunk-Dy2IczTc.js`; a second run changed nothing. All 828 entries in `site/ngsw.json` match the files' SHA-1 hashes. Including its Git byte-preservation rule, the 836-file site is 21,670,413 bytes. No file contains `GOCSPX-` or the plugin's path.
 2. A copy of `site/`, without the folders Tofu's GitHub import drops, was served with `python3 -I -m http.server` on 127.0.0.1. In the browser the app started on a fresh address in about a second; a task created through the UI (Shift+A) was still there after a reload. The app requested the other 22 bundled plugins' manifests (all `200`) and nothing under `google-calendar-provider`; every request returned `200` or `304`; the service worker installed the new manifest. Loads on fresh addresses (two of each copy) started in about a second with no console errors. In this test browser, which runs a page-injecting extension, some loads of both the trimmed and the untrimmed copy stayed on the loading screen for more than ten seconds, and one reload logged a failed lazy import of a locale chunk; the following loads of both copies started normally. This is a focused smoke test, not a full integration or security audit.
 3. Tofu's own GitHub-import check of the pushed `tofu` branch with app folder `site` refused no file type and reported `safety ok (4 findings)`, none blocking. It also reported the site as not on the Free static lane, because 833 files to publish exceed that lane's 500-file limit.
+
+## Hosting note (2026-10-27 UTC)
+
+1. The Size line now says a gallery copy goes online on Tofu's server hosting, on any plan, Free included; Tofu's static hosting still publishes at most 500 files per site. `git ls-tree -r --name-only HEAD -- site` lists 836 files, the count the trim above reports; static hosting skips `site/.gitattributes`, `site/assets/bundled-plugins/.gitkeep` and `site/LICENSE`, which leaves the 833 files to publish that the Size line and the 2026-10-23 import check count.
