@@ -1,9 +1,9 @@
-import { startBreakEndAlarm, stopBreakEndAlarm } from './break-end-alarm';
+import { startLoopingAlarm, stopLoopingAlarm } from './looping-alarm';
 import { closeAudioContext } from './audio-context';
 
 const SOUND = 'positive.mp3';
 
-describe('break-end-alarm', () => {
+describe('looping-alarm', () => {
   let originalAudioContext: typeof AudioContext;
   let originalFetch: typeof window.fetch;
   let mockContext: any;
@@ -58,13 +58,13 @@ describe('break-end-alarm', () => {
   });
 
   afterEach(() => {
-    stopBreakEndAlarm();
+    stopLoopingAlarm();
     (window as any).AudioContext = originalAudioContext;
     (window as any).fetch = originalFetch;
   });
 
   it('starts a looping source at the given volume', async () => {
-    await startBreakEndAlarm(SOUND, 50);
+    await startLoopingAlarm(SOUND, 50);
 
     expect(createdSources.length).toBe(1);
     const source = createdSources[0];
@@ -74,30 +74,69 @@ describe('break-end-alarm', () => {
   });
 
   it('stops and disconnects the active source on stop', async () => {
-    await startBreakEndAlarm(SOUND, 100);
+    await startLoopingAlarm(SOUND, 100);
     const source = createdSources[0];
 
-    stopBreakEndAlarm();
+    stopLoopingAlarm();
 
     expect(source.stop).toHaveBeenCalled();
     expect(source.disconnect).toHaveBeenCalled();
   });
 
   it('stops the previous source when restarted, so no loop can leak', async () => {
-    await startBreakEndAlarm(SOUND, 100);
+    await startLoopingAlarm(SOUND, 100);
     const first = createdSources[0];
 
-    await startBreakEndAlarm(SOUND, 100);
+    await startLoopingAlarm(SOUND, 100);
 
     expect(first.stop).toHaveBeenCalled();
     expect(createdSources.length).toBe(2);
+  });
+
+  it('stops its own loop when given the active token', async () => {
+    const token = await startLoopingAlarm(SOUND, 100);
+
+    stopLoopingAlarm(token);
+
+    expect(createdSources[0].stop).toHaveBeenCalled();
+  });
+
+  it('does not stop a newer loop when given a stale token', async () => {
+    const first = await startLoopingAlarm(SOUND, 100);
+    await startLoopingAlarm(SOUND, 100);
+
+    stopLoopingAlarm(first);
+
+    expect(createdSources[1].stop).not.toHaveBeenCalled();
+  });
+
+  it('ignores a second stop with the same token', async () => {
+    const token = await startLoopingAlarm(SOUND, 100);
+    stopLoopingAlarm(token);
+    const next = startLoopingAlarm(SOUND, 100);
+
+    stopLoopingAlarm(token);
+    await next;
+
+    expect(createdSources.length).toBe(2);
+    expect(createdSources[1].stop).not.toHaveBeenCalled();
+  });
+
+  it('stops a loop whose caller stopped it before the start resolved', async () => {
+    const start = startLoopingAlarm(SOUND, 100);
+
+    await start.then(stopLoopingAlarm);
+
+    expect(createdSources.length).toBe(1);
+    expect(createdSources[0].stop).toHaveBeenCalled();
+    expect(createdSources[0].disconnect).toHaveBeenCalled();
   });
 
   it('auto-stops after the hard safety ceiling', async () => {
     const TEN_MINUTES_MS = 10 * 60 * 1000;
     jasmine.clock().install();
     try {
-      await startBreakEndAlarm(SOUND, 100);
+      await startLoopingAlarm(SOUND, 100);
       const source = createdSources[0];
       expect(source.stop).not.toHaveBeenCalled();
 
@@ -110,6 +149,6 @@ describe('break-end-alarm', () => {
   });
 
   it('does not throw when stop is called with no active alarm', () => {
-    expect(() => stopBreakEndAlarm()).not.toThrow();
+    expect(() => stopLoopingAlarm()).not.toThrow();
   });
 });

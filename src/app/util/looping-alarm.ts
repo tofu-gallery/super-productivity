@@ -4,22 +4,21 @@ import { Log } from '../core/log';
 const BASE = './assets/snd';
 
 /**
- * Hard safety ceiling for the looping break-end alarm. If the user genuinely
- * walked away, the alarm must not sound forever into an empty room — it stops
- * itself after this long even if no break-leave transition ever arrives.
- * Intentionally non-configurable to keep the feature to a single toggle (#8593).
+ * Hard safety ceiling for the looping alarm. If the user genuinely walked away,
+ * the alarm must not sound forever into an empty room — it stops itself after
+ * this long even if its caller never stops it.
+ * Intentionally non-configurable to keep each feature to a single toggle (#8593).
  */
 const MAX_ALARM_DURATION = 10 * 60 * 1000; // 10 minutes
 
 let activeSource: AudioBufferSourceNode | null = null;
 let activeGain: GainNode | null = null;
 let capTimeoutId: ReturnType<typeof setTimeout> | null = null;
-// Monotonic generation counter. Every start() and stop() bumps it, so an
+// Monotonic generation counter. Every start() and non-stale stop() bumps it, so an
 // in-flight start() whose awaits resolve late can detect that a newer start()
 // or a stop() has superseded it and bail before creating a second source. This
 // guarantees a restart can never leak an orphaned, unstoppable loop — even if
-// two starts overlap (the single caller never overlaps them, but the primitive
-// is self-contained, so it does not rely on that).
+// two starts overlap.
 let startToken = 0;
 
 const _teardownNodes = (): void => {
@@ -43,25 +42,29 @@ const _teardownNodes = (): void => {
 };
 
 /**
- * Loops the given sound at the specified volume until stopBreakEndAlarm() is
- * called (or the hard safety ceiling elapses). Any sound already looping is
- * stopped first, so a restart can never leak a second, unstoppable source.
+ * Loops the given sound at the specified volume until stopLoopingAlarm() is
+ * called (or the hard safety ceiling elapses). Shared by the focus-mode
+ * break-end alarm and alarm-style reminders on desktop, so only one alarm sounds
+ * at a time: any sound already looping is stopped first, so a restart can never
+ * leak a second, unstoppable source.
  *
  * NOTE: unlike startWhiteNoise(), this deliberately does NOT call
  * setAudioContextKeepAwake(). The alarm is desktop-oriented — there the
  * AudioContext keeps running while the window is unfocused, which is the whole
  * point (you stepped away from your desk) — and keepAwake is a single-owner
  * flag that white noise relies on. On mobile the context is suspended on
- * app-background (#8243), so the loop stops there by design; the setting is
- * per-device precisely because this behavior differs across platforms.
+ * app-background (#8243), so the loop stops there by design; the break-end
+ * setting is per-device precisely because this behavior differs across
+ * platforms, and alarm-style reminders only start the loop on desktop.
  *
  * @param filePath - Path to the sound file relative to assets/snd
  * @param volume - Volume level from 0 to 100
+ * @returns This loop's token; pass it to stopLoopingAlarm() to stop only this loop
  */
-export const startBreakEndAlarm = async (
+export const startLoopingAlarm = async (
   filePath: string,
   volume: number,
-): Promise<void> => {
+): Promise<number> => {
   // Claim a new generation and stop any current/previous loop synchronously,
   // before the first await, so a rapid start → start can never leave an
   // orphaned source running.
@@ -73,7 +76,7 @@ export const startBreakEndAlarm = async (
     const buffer = await getAudioBuffer(`${BASE}/${filePath}`);
     // A newer start() or a stop() may have superseded us while we awaited.
     if (myToken !== startToken) {
-      return;
+      return myToken;
     }
 
     const source = ctx.createBufferSource();
@@ -89,16 +92,19 @@ export const startBreakEndAlarm = async (
     activeSource = source;
     activeGain = gain;
 
-    capTimeoutId = setTimeout(() => stopBreakEndAlarm(), MAX_ALARM_DURATION);
+    capTimeoutId = setTimeout(() => stopLoopingAlarm(myToken), MAX_ALARM_DURATION);
   } catch (e) {
-    Log.err('Error starting looping break-end alarm:', e);
-    if (myToken === startToken) {
-      stopBreakEndAlarm();
-    }
+    Log.err('Error starting looping alarm:', e);
+    stopLoopingAlarm(myToken);
   }
+  return myToken;
 };
 
-export const stopBreakEndAlarm = (): void => {
+export const stopLoopingAlarm = (token?: number): void => {
+  // A token from an older start() means a newer loop owns the sound: leave it.
+  if (token !== undefined && token !== startToken) {
+    return;
+  }
   // Bump the generation so any in-flight start() bails instead of creating a
   // source after we have torn everything down.
   startToken++;

@@ -63,12 +63,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 import { ReminderModule } from './app/features/reminder/reminder.module';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import {
-  PreloadAllModules,
-  provideRouter,
-  withHashLocation,
-  withPreloading,
-} from '@angular/router';
+import { provideRouter, withHashLocation, withPreloading } from '@angular/router';
 import { APP_ROUTES } from './app/app.routes';
 import { StoreModule, Store } from '@ngrx/store';
 import { META_REDUCERS } from './app/root-store/meta/meta-reducer-registry';
@@ -113,6 +108,10 @@ import { suspendAudioContext, unlockAudioContext } from './app/util/audio-contex
 import { NetworkRetryInterceptorService } from './app/core/http/network-retry-interceptor.service';
 import { routeCapacitorAppUrl } from './app/core/app-url-open-router';
 import { AppUriQuickActionsService } from './app/core-ui/app-uri-actions/app-uri-quick-actions.service';
+import { markBoot, reportBootTimingsOnFirstRender } from './app/core/startup/boot-timing';
+import { IdlePreloadingStrategy } from './app/core/startup/idle-preloading-strategy';
+
+markBoot('main-start');
 
 if (environment.production || environment.stage) {
   enableProdMode();
@@ -154,6 +153,7 @@ bootstrapApplication(AppComponent, {
     // timeout, so a failed or stalled chunk load degrades to the default locale
     // instead of failing bootstrap or holding up first render indefinitely.
     provideAppInitializer(() => registerNavigatorLocale()),
+    provideAppInitializer(() => reportBootTimingsOnFirstRender()),
     // Feature-owned formly types, registered here rather than in ui/'s
     // FormlyConfigModule so ui/ does not import from features/.
     provideFormlyConfig(PRIORITY_ICON_PRESET_SELECT_FORMLY_CONFIG),
@@ -326,7 +326,7 @@ bootstrapApplication(AppComponent, {
         },
       }),
     },
-    provideRouter(APP_ROUTES, withHashLocation(), withPreloading(PreloadAllModules)),
+    provideRouter(APP_ROUTES, withHashLocation(), withPreloading(IdlePreloadingStrategy)),
     PLUGIN_INITIALIZER_PROVIDER,
     provideZonelessChangeDetection(),
     // Initialize operation capture service for synchronous state change capture
@@ -431,6 +431,7 @@ bootstrapApplication(AppComponent, {
     // race condition where upload attempts happen before sync config is loaded
   ],
 }).then((appRef) => {
+  markBoot('bootstrapped');
   appInjector = appRef.injector;
 
   // Expose store and persistence helpers for E2E tests in non-production builds.

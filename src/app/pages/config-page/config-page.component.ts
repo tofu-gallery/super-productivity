@@ -65,6 +65,7 @@ import { SyncWrapperService } from '../../imex/sync/sync-wrapper.service';
 import { MatDialog } from '@angular/material/dialog';
 import { SyncProviderId } from '../../op-log/sync-providers/provider.const';
 import { MatTab, MatTabGroup, MatTabLabel } from '@angular/material/tabs';
+import { TabHeaderWheelScrollDirective } from '../../ui/tab-header-wheel-scroll/tab-header-wheel-scroll.directive';
 import { MatIcon } from '@angular/material/icon';
 import { MatTooltip } from '@angular/material/tooltip';
 import { MatButton, MatIconButton } from '@angular/material/button';
@@ -105,6 +106,7 @@ const TAB_ANIMATION_DURATION_MS = 200;
     TranslatePipe,
     PluginManagementComponent,
     MatTabGroup,
+    TabHeaderWheelScrollDirective,
     MatTab,
     MatTabLabel,
     MatIcon,
