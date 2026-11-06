@@ -197,10 +197,6 @@
     "plugins:build:silent": "npm run vite-plugin:build && cd packages/plugin-dev && npm run build:all:silent",
     "plugin-starter:check": "node tools/check-plugin-starter.js"
   },
-  "resolutions": {
-    "sass": "1.32.6",
-    "@ctrl/tinycolor": "4.1.0"
-  },
   "dependencies": {
     "@capacitor/browser": "^8.0.5",
     "@capacitor/ios": "^8.5.3",
@@ -369,11 +365,11 @@
   },
   "optionalDependencies": {
     "@lmdb/lmdb-darwin-x64": "^3.5.4",
-    "@lmdb/lmdb-linux-x64": "^3.5.4",
+    "@lmdb/lmdb-linux-x64": "^3.5.9",
     "@lmdb/lmdb-win32-x64": "^3.5.4",
-    "@rollup/rollup-darwin-x64": "4.60.2",
-    "@rollup/rollup-linux-x64-gnu": "4.60.2",
-    "@rollup/rollup-win32-x64-msvc": "4.60.2"
+    "@rollup/rollup-darwin-x64": "4.66.0",
+    "@rollup/rollup-linux-x64-gnu": "4.66.0",
+    "@rollup/rollup-win32-x64-msvc": "4.66.0"
   },
   "workspaces": [
     "packages/*",
