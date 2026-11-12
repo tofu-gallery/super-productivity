@@ -1147,7 +1147,13 @@
       "SHIFT_KEY_INFO": "Hold Shift to toggle day planning mode",
       "START": "Work Start",
       "TOGGLE_DAY_PLANNING_HINT": "Ctrl+1 to toggle day planning",
-      "TOGGLE_TIME_SCHEDULING_HINT": "Ctrl+1 to toggle time scheduling"
+      "TOGGLE_TIME_SCHEDULING_HINT": "Ctrl+1 to toggle time scheduling",
+      "TRAY_FREE": "{{time}} free",
+      "TRAY_MORE": "+{{count}} more",
+      "TRAY_OVER": "{{time}} over",
+      "TRAY_PLANNED": "{{time}} planned",
+      "TRAY_SET_TIME": "Set a time",
+      "TRAY_SHOW_LESS": "Show less"
     },
     "SEARCH_BAR": {
       "DELETED": "Deleted",
@@ -2329,6 +2335,8 @@
         "QUICK_SETTING": "Repeats",
         "REMIND_AT": "Remind at",
         "REMIND_AT_PLACEHOLDER": "Select when to remind",
+        "DETACH_FOR_DATE": "Separate task for {{date}}",
+        "DETACH_FOR_DATE_TOOLTIP": "Skips this day in the series and adds a normal task for it that you can move and edit. Later changes to the recurring task don't apply to it.",
         "SKIP_FOR_DATE": "Skip for {{date}}",
         "SKIP_INSTANCE": "Skip for today",
         "REPEAT_CYCLE": "Unit",
@@ -2480,6 +2488,9 @@
         "STOPPED_ON": "Stopped on {{device}}",
         "TRACKING_ON": "Tracking on {{device}}",
         "WAS_TRACKING_ON": "Was tracking on {{device}}"
+      },
+      "PLAY_BTN": {
+        "TOOLTIP": "Tracking on {{device}} – start here to take over"
       },
       "B": {
         "MOVED_TO": "Tracking moved to {{device}} – stopped “{{title}}” here"
@@ -3009,11 +3020,14 @@
       "L_IS_WORK_START_END_ENABLED": "Limit unscheduled task flow to specific work times",
       "L_LUNCH_BREAK_END": "Lunch break end",
       "L_LUNCH_BREAK_START": "Lunch break start",
+      "L_UNTIMED_TASK_PLACEMENT": "Tasks without a time",
       "L_WORK_END": "Work Day End",
       "L_WORK_START": "Work Day Start",
       "LUNCH_BREAK_START_END_DESCRIPTION": "e.g. 13:00",
       "MONTH": "Month",
       "TITLE": "Schedule",
+      "UNTIMED_TASK_PLACEMENT_AUTO": "Placed automatically",
+      "UNTIMED_TASK_PLACEMENT_TRAY": "Kept in a tray",
       "WORK_END_DESCRIPTION": "e.g. 17:00",
       "WORK_START_DESCRIPTION": "e.g. 9:00"
     },
@@ -3313,7 +3327,7 @@
     "ROUND_UP_15M": "Round UP all tasks to 15 minutes",
     "ROUND_UP_30M": "Round UP all tasks to 30 minutes",
     "SAVE_AND_GO_HOME": "Finish the day",
-    "SAVE_AND_GO_HOME_TOOLTIP": "Move all completed tasks to the archive (worklog) and optionally sync all data and close the app.",
+    "SAVE_AND_GO_HOME_TOOLTIP": "Move all completed tasks to the archive (you can find them again in History) and optionally sync all data and close the app.",
     "START_END": "Start – End",
     "SUMMARY_FOR": "Daily Summary for {{dayStr}}",
     "TASKS_COMPLETED": "Tasks Completed",
