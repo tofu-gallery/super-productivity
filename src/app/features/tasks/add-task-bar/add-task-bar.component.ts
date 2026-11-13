@@ -58,7 +58,9 @@ import {
 } from '@angular/material/autocomplete';
 import { MatProgressSpinner } from '@angular/material/progress-spinner';
 import { AddTaskSuggestion } from './add-task-suggestions.model';
+// eslint-disable-next-line local-rules/no-sibling-feature-ui -- grandfathered feature-boundary debt (#8299)
 import { IssueIconPipe } from '../../issue/issue-icon/issue-icon.pipe';
+// eslint-disable-next-line local-rules/no-sibling-feature-ui -- grandfathered feature-boundary debt (#8299)
 import { TagComponent } from '../../tag/tag/tag.component';
 import { truncate } from '../../../util/truncate';
 import { SnackService } from '../../../core/snack/snack.service';
@@ -897,9 +899,14 @@ export class AddTaskBarComponent implements AfterViewInit, OnInit, OnDestroy {
     if (!this._markdownPasteService.isMarkdownTaskList(pastedText)) return;
 
     event.preventDefault();
-    this._markdownPasteService.handleMarkdownPaste(pastedText, null).then(() => {
-      this.stateService.updateInputTxt('');
-    });
+    this._markdownPasteService
+      .handleMarkdownPaste(pastedText, null, undefined, undefined, {
+        isAddToBacklog: this.isAddToBacklog(),
+        isAddToBottom: this.isAddToBottom(),
+      })
+      .then(() => {
+        this.stateService.updateInputTxt('');
+      });
   }
 
   @HostListener('document:click', ['$event'])
@@ -1066,6 +1073,7 @@ export class AddTaskBarComponent implements AfterViewInit, OnInit, OnDestroy {
       .subscribe({
         next: async (task) => {
           const { DialogEditTaskRepeatCfgComponent } =
+            // eslint-disable-next-line local-rules/no-sibling-feature-ui -- grandfathered feature-boundary debt (#8299)
             await import('../../task-repeat-cfg/dialog-edit-task-repeat-cfg/dialog-edit-task-repeat-cfg.component');
           this._matDialog.open(DialogEditTaskRepeatCfgComponent, {
             data: { task, defaultRemindOption: remindOption },
